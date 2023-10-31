@@ -39,7 +39,7 @@ class Admin:
         return self.pin
 
     def __hash__(self):
-        return hash(self.admin_id) + hash(self.name) + hash(self.pin) + hash(self.__user_email)
+        return hash(self.admin_id), hash(self.name), hash(self.pin), hash(self.__user_email)
 
     def check_user_id(self, user, user_id):
         return user_id == user.get_user_id()

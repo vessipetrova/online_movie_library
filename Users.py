@@ -80,3 +80,8 @@ class User:
     def rate_movie(self, movie, rating):
         if 0 < rating < 6:
             movie.add_rating(rating, self)
+        else:
+            return "Rating should be between 1 and 5"
+
+    def get_password(self):
+        return self.__password
