@@ -15,7 +15,7 @@ class MovieLibrary:
             self.movies_list.remove(movie)
         else:
             new_movies_list = []
-            for current_movie in self.movies_list:
+            for current_movie in self.movies_list: # Remove repeating occurances of current movie in the list
                 if current_movie != movie:
                     new_movies_list.append(current_movie)
             self.movies_list = new_movies_list

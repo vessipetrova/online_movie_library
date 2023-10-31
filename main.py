@@ -120,3 +120,7 @@ admin1.add_movie_to_library(library1, movie4)
 print("Available movies in library 1 after add: ", library1.get_available_movies())
 admin1.remove_movie_from_library(library1, movie4)
 print("Available movies in library 1 after remove: ", library1.get_available_movies())
+
+print("Ratings of Movie 1: ", movie1.get_ratings())
+print("Rate movie 1 as User 1: ", user1.rate_movie(movie1, 5))
+print("Ratings of Movie 1: ", movie1.get_ratings())

@@ -29,4 +29,7 @@ class Movie:
         return self.title
 
     def add_rating(self, rating, user):
-        self.ratings[user] = rating
+        self.ratings[user.get_user_id()] = rating
+
+    def get_ratings(self):
+        return self.ratings

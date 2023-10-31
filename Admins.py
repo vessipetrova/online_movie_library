@@ -22,10 +22,8 @@ class Admin:
         return self.__user_email
 
     def set_user_email(self, new_email):
-        self.__user_email = new_email
+        self.__user_email: "" = new_email
         return self.__user_email
-
-
 
     def get_admin_id(self):
         return self.admin_id
